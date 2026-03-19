@@ -2,6 +2,12 @@
 
 This project consists of a Python-based server for motion tracking (Face, Hand, Pose) using MediaPipe, and a Unity-based client for visualization and interaction.
 
+## Concept Diagrams
+
+![Concept Diagram 1](assets/concept.png)
+
+![Concept Diagram 2](assets/concept_2.png)
+
 ## Project Structure
 
 This repository is organized into two main components:
@@ -43,6 +49,7 @@ pip install -r requirements.txt
 The server requires specific MediaPipe models to function. A script is provided to download these models automatically.
 
 -   **Windows**: Run the `download_model.bat` file located in the `GCT555_Server` directory.
+-   **MacOS or Unix based OS**: Run the `download_model.sh` file located in the `GCT555_Server` directory.
 
 This will create a `models/` directory and download:
 -   `pose_landmarker_heavy.task`
