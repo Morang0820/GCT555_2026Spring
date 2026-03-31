@@ -345,6 +345,91 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223176545}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &271571305
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      propertyPath: m_Name
+      value: Ch03_nonPBR
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 271571307}
+  m_SourcePrefab: {fileID: 100100000, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+--- !u!1 &271571306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 790a279f6536d62449c969c11833eddb, type: 3}
+  m_PrefabInstance: {fileID: 271571305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &271571307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271571306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a6fef0dbdf3f64086590caa8ef62ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MixamoRetargeter
+  streamManager: {fileID: 1405606663}
+  poseClient: {fileID: 0}
+  smoothing: 0.5
+  mirrorX: 1
+  applyRootPosition: 1
+  rootPositionScale: 1
+  rootOffset: {x: 0, y: 0, z: 0}
+  rootIgnoreY: 1
 --- !u!1 &282124859
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +924,7 @@ MonoBehaviour:
     name: Wall1
     ipAddress: 127.0.0.1
     quadTransform: {fileID: 60969004}
-    activeType: 2
+    activeType: 0
     poseSocketPort: 5050
     handSocketPort: 5051
     faceSocketPort: 5052
@@ -850,7 +935,7 @@ MonoBehaviour:
     name: Wall2
     ipAddress: 127.0.0.1
     quadTransform: {fileID: 282124860}
-    activeType: 1
+    activeType: 0
     poseSocketPort: 5050
     handSocketPort: 5051
     faceSocketPort: 5052
@@ -1002,3 +1087,4 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 986738195}
   - {fileID: 1405606664}
+  - {fileID: 271571305}
